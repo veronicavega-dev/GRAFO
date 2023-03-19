@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Caso uno</title>
+    <link rel="stylesheet" href="stilo.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+</head>
+<body>
+
+    <div class="container-fluid">
+        
+        <div class="row" >
+            <div class="col-6 mt-5" id="ff">
+                <p>Calculadora de salarios</p>
+                <div class="row " >
+                    <!-- Selecciona categoria -->
+                    <div class="col">
+                        <br>
+                        <p>selecciona tu categoria</p>
+                        <select id="categoria" class="form-select" aria-label="Default select example">
+                            <option selected  value="4">selecciona</option>
+                            <option value="1">Uno</option>
+                            <option value="2">Dos</option>
+                            <option value="3">Tres</option>
+                        </select>
+                    </div>
+                    <!-- Horas trabajadas-->
+                    <div class="col">
+                        <div class="mb-3" style="margin-top: 3.6vh;">
+                            <label for="exampleFormControlInput1" class="form-label">Horas trabajadas</label>
+                            <input id="horas"  type="number" class="form-control" id="exampleFormControlInput1" placeholder="...">
+                        </div>
+                        
+                    </div>
+                    <!-- Boton -->
+                    <button id="boton" type="button" class="btn btn-success" onclick="inicio()">Calcular</button>
+                </div>
+            </div>
+            <div class="col-2"></div>
+            <div class="col-4 mt-5 ">
+                <div class="div" id="tabla">
+                    <table class="table table-success table-striped">
+                        <thead>
+                        <td>Pago Inicia</td>
+                        <td>Horas trabajadas</td>
+                        <td id="hr">Horas extra</td>
+                        <td>Salario total</td>
+                        </thead>
+                        <tbody>
+                            <td id="salarioNeto"></td>
+                            <td id="ana"></td>
+                            <td id="numeroUno"></td>
+                            <td id="tot"></td>
+                        </tbody>
+                    </table>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <script src="./casoUno.js"></script>
+</body>
+</html>

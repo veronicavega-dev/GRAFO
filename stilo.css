@@ -1,0 +1,17 @@
+body{
+    background-image: url(closeup-flip-clock-show-number-260nw-1899267232.webp
+    );
+    padding: 10em;
+
+}
+
+#tabla{
+    /* display: none; */
+    display:none;
+}
+
+#ff{
+    /* border: solid; */
+    /* margin-top: 2vh; */
+    margin-bottom: 40px;
+}
